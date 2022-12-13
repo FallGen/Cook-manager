@@ -54,7 +54,6 @@ namespace Cook_manager
                         TB_sebestoimost.Text = Convert.ToString(Math.Round((Convert.ToDouble(product_category[1, i]) / Convert.ToDouble(product_category[2, i])) * Convert.ToDouble(TB_value.Text), 2));
                         break;
                     }    
-                //TB_sebestoimost.Text = Convert.ToString(Math.Round((price[CB_ingredient.SelectedIndex] / kolvo[CB_ingredient.SelectedIndex]) * Convert.ToDouble(TB_value.Text), 2));
             }
         }
 
