@@ -31,17 +31,21 @@ namespace Cook_manager
 
         private void CB_category_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CB_ingredient.Items.Clear();
-
-            if (CB_category.SelectedItem.ToString() != "все")
+            try
             {
-                for (int i = 0; i < product_category.GetLength(1); i++)
-                    if (CB_category.SelectedItem.ToString() == product_category[3, i])
+                CB_ingredient.Items.Clear();
+
+                if (CB_category.SelectedItem.ToString() != "все")
+                {
+                    for (int i = 0; i < product_category.GetLength(1); i++)
+                        if (CB_category.SelectedItem.ToString() == product_category[3, i])
+                            CB_ingredient.Items.Add(product_category[0, i]);
+                }
+                else
+                    for (int i = 0; i < product_category.GetLength(1); i++)
                         CB_ingredient.Items.Add(product_category[0, i]);
             }
-            else
-                for (int i = 0; i < product_category.GetLength(1); i++)
-                    CB_ingredient.Items.Add(product_category[0, i]);
+            catch { }
         }
 
         private void update_price()
@@ -53,7 +57,7 @@ namespace Cook_manager
                     {
                         TB_sebestoimost.Text = Convert.ToString(Math.Round((Convert.ToDouble(product_category[1, i]) / Convert.ToDouble(product_category[2, i])) * Convert.ToDouble(TB_value.Text), 2));
                         break;
-                    }    
+                    }
             }
         }
 

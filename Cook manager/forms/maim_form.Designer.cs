@@ -125,6 +125,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button24 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.TB_changelog = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.PANEL_recept.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -145,6 +147,7 @@
             this.PANEL_param.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1125,7 +1128,7 @@
             this.flowLayoutPanel2.Controls.Add(this.button18);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(200, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(516, 58);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(600, 58);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // button18
@@ -1261,7 +1264,7 @@
             this.flowLayoutPanel3.Controls.Add(this.button22);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(200, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(544, 58);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(600, 58);
             this.flowLayoutPanel3.TabIndex = 12;
             // 
             // button20
@@ -1298,6 +1301,8 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.TB_changelog);
             this.panel3.Location = new System.Drawing.Point(200, 58);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(600, 392);
@@ -1337,6 +1342,30 @@
             this.label12.Size = new System.Drawing.Size(124, 21);
             this.label12.TabIndex = 20;
             this.label12.Text = "очистка данных";
+            // 
+            // TB_changelog
+            // 
+            this.TB_changelog.BackColor = System.Drawing.Color.White;
+            this.TB_changelog.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TB_changelog.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TB_changelog.Location = new System.Drawing.Point(7, 27);
+            this.TB_changelog.Multiline = true;
+            this.TB_changelog.Name = "TB_changelog";
+            this.TB_changelog.ReadOnly = true;
+            this.TB_changelog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.TB_changelog.Size = new System.Drawing.Size(581, 353);
+            this.TB_changelog.TabIndex = 0;
+            this.TB_changelog.Text = resources.GetString("TB_changelog.Text");
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(3, 3);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(142, 21);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "список изменений";
             // 
             // maim_form
             // 
@@ -1383,6 +1412,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1474,6 +1505,8 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox TB_changelog;
     }
 }
 
