@@ -42,6 +42,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(maim_form));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -61,6 +62,8 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PANEL_create = new System.Windows.Forms.Panel();
+            this.TB_ves = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
@@ -80,6 +83,10 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PANEL_calculate = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button21 = new System.Windows.Forms.Button();
@@ -93,36 +100,31 @@
             this.TB_recept_square = new System.Windows.Forms.TextBox();
             this.TB_recept_circle = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.PB_my_form_square = new System.Windows.Forms.PictureBox();
+            this.PB_my_form_circle = new System.Windows.Forms.PictureBox();
+            this.PB_my_form_rectangle = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.PB_form_recept_square = new System.Windows.Forms.PictureBox();
+            this.PB_form_recept_circle = new System.Windows.Forms.PictureBox();
+            this.PB_form_recept_rectangle = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button18 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.PANEL_param = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.CB_thema = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label10 = new System.Windows.Forms.Label();
-            this.TB_ves = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button23 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.LB_category = new System.Windows.Forms.ListBox();
             this.button19 = new System.Windows.Forms.Button();
+            this.CB_thema = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.button20 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.PB_my_form_square = new System.Windows.Forms.PictureBox();
-            this.PB_my_form_circle = new System.Windows.Forms.PictureBox();
-            this.PB_my_form_rectangle = new System.Windows.Forms.PictureBox();
-            this.PB_form_recept_square = new System.Windows.Forms.PictureBox();
-            this.PB_form_recept_circle = new System.Windows.Forms.PictureBox();
-            this.PB_form_recept_rectangle = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.PANEL_recept.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -133,16 +135,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.PANEL_calculate.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.PANEL_param.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_my_form_square)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_my_form_circle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_my_form_rectangle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_form_recept_square)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_form_recept_circle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_form_recept_rectangle)).BeginInit();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.PANEL_param.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,6 +165,22 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 450);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Image = global::Cook_manager.Properties.Resources.шапка_48х48;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 58);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -487,6 +505,26 @@
             this.PANEL_create.TabIndex = 3;
             this.PANEL_create.Visible = false;
             // 
+            // TB_ves
+            // 
+            this.TB_ves.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TB_ves.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TB_ves.Location = new System.Drawing.Point(621, 370);
+            this.TB_ves.Name = "TB_ves";
+            this.TB_ves.Size = new System.Drawing.Size(115, 22);
+            this.TB_ves.TabIndex = 24;
+            this.TB_ves.Text = "0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(526, 370);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 21);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "общий вес:";
+            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.DarkGray;
@@ -790,6 +828,40 @@
             this.dataGridView4.TabIndex = 2;
             this.dataGridView4.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView4_CellMouseClick);
             // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn8.HeaderText = "продукт";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "стоимость";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "кол-во";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn9.Width = 80;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "категория";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // PANEL_calculate
             // 
             this.PANEL_calculate.Controls.Add(this.panel1);
@@ -969,6 +1041,39 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "моя форма торта";
             // 
+            // PB_my_form_square
+            // 
+            this.PB_my_form_square.Image = global::Cook_manager.Properties.Resources.квадрат_72х72;
+            this.PB_my_form_square.Location = new System.Drawing.Point(142, 227);
+            this.PB_my_form_square.Name = "PB_my_form_square";
+            this.PB_my_form_square.Size = new System.Drawing.Size(90, 90);
+            this.PB_my_form_square.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PB_my_form_square.TabIndex = 9;
+            this.PB_my_form_square.TabStop = false;
+            this.PB_my_form_square.Click += new System.EventHandler(this.PB_my_form_square_Click);
+            // 
+            // PB_my_form_circle
+            // 
+            this.PB_my_form_circle.Image = global::Cook_manager.Properties.Resources.круг_72х72;
+            this.PB_my_form_circle.Location = new System.Drawing.Point(12, 227);
+            this.PB_my_form_circle.Name = "PB_my_form_circle";
+            this.PB_my_form_circle.Size = new System.Drawing.Size(90, 90);
+            this.PB_my_form_circle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PB_my_form_circle.TabIndex = 6;
+            this.PB_my_form_circle.TabStop = false;
+            this.PB_my_form_circle.Click += new System.EventHandler(this.PB_my_form_circle_Click);
+            // 
+            // PB_my_form_rectangle
+            // 
+            this.PB_my_form_rectangle.Image = global::Cook_manager.Properties.Resources.прямоугольник_72х72;
+            this.PB_my_form_rectangle.Location = new System.Drawing.Point(272, 227);
+            this.PB_my_form_rectangle.Name = "PB_my_form_rectangle";
+            this.PB_my_form_rectangle.Size = new System.Drawing.Size(90, 90);
+            this.PB_my_form_rectangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PB_my_form_rectangle.TabIndex = 8;
+            this.PB_my_form_rectangle.TabStop = false;
+            this.PB_my_form_rectangle.Click += new System.EventHandler(this.PB_my_form_rectangle_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -979,6 +1084,40 @@
             this.label5.Size = new System.Drawing.Size(252, 30);
             this.label5.TabIndex = 3;
             this.label5.Text = "форма торта в рецепте";
+            // 
+            // PB_form_recept_square
+            // 
+            this.PB_form_recept_square.Image = global::Cook_manager.Properties.Resources.квадрат_72х72;
+            this.PB_form_recept_square.Location = new System.Drawing.Point(142, 36);
+            this.PB_form_recept_square.Name = "PB_form_recept_square";
+            this.PB_form_recept_square.Size = new System.Drawing.Size(90, 90);
+            this.PB_form_recept_square.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PB_form_recept_square.TabIndex = 5;
+            this.PB_form_recept_square.TabStop = false;
+            this.PB_form_recept_square.Click += new System.EventHandler(this.PB_form_recept_square_Click);
+            // 
+            // PB_form_recept_circle
+            // 
+            this.PB_form_recept_circle.Image = global::Cook_manager.Properties.Resources.круг_72х72;
+            this.PB_form_recept_circle.Location = new System.Drawing.Point(12, 36);
+            this.PB_form_recept_circle.Name = "PB_form_recept_circle";
+            this.PB_form_recept_circle.Size = new System.Drawing.Size(90, 90);
+            this.PB_form_recept_circle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PB_form_recept_circle.TabIndex = 2;
+            this.PB_form_recept_circle.TabStop = false;
+            this.PB_form_recept_circle.Click += new System.EventHandler(this.PB_form_recept_circle_Click);
+            // 
+            // PB_form_recept_rectangle
+            // 
+            this.PB_form_recept_rectangle.BackColor = System.Drawing.Color.White;
+            this.PB_form_recept_rectangle.Image = global::Cook_manager.Properties.Resources.прямоугольник_72х72;
+            this.PB_form_recept_rectangle.Location = new System.Drawing.Point(272, 36);
+            this.PB_form_recept_rectangle.Name = "PB_form_recept_rectangle";
+            this.PB_form_recept_rectangle.Size = new System.Drawing.Size(90, 90);
+            this.PB_form_recept_rectangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.PB_form_recept_rectangle.TabIndex = 4;
+            this.PB_form_recept_rectangle.TabStop = false;
+            this.PB_form_recept_rectangle.Click += new System.EventHandler(this.PB_form_recept_rectangle_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -1025,94 +1164,35 @@
             this.PANEL_param.TabIndex = 4;
             this.PANEL_param.Visible = false;
             // 
-            // flowLayoutPanel3
+            // panel2
             // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.DimGray;
-            this.flowLayoutPanel3.Controls.Add(this.button20);
-            this.flowLayoutPanel3.Controls.Add(this.button22);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(200, 0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(544, 58);
-            this.flowLayoutPanel3.TabIndex = 12;
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.button24);
+            this.panel2.Controls.Add(this.button23);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.LB_category);
+            this.panel2.Controls.Add(this.button19);
+            this.panel2.Controls.Add(this.CB_thema);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Location = new System.Drawing.Point(200, 58);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(600, 392);
+            this.panel2.TabIndex = 18;
             // 
-            // CB_thema
+            // button23
             // 
-            this.CB_thema.BackColor = System.Drawing.Color.White;
-            this.CB_thema.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CB_thema.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CB_thema.FormattingEnabled = true;
-            this.CB_thema.Items.AddRange(new object[] {
-            "стандартная",
-            "miavochka"});
-            this.CB_thema.Location = new System.Drawing.Point(183, 27);
-            this.CB_thema.Name = "CB_thema";
-            this.CB_thema.Size = new System.Drawing.Size(170, 29);
-            this.CB_thema.TabIndex = 10;
-            this.CB_thema.SelectedIndexChanged += new System.EventHandler(this.CB_thema_SelectedIndexChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(179, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 21);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "тема";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn8.HeaderText = "продукт";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "стоимость";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "кол-во";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn9.Width = 80;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "категория";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(526, 370);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 21);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "общий вес:";
-            // 
-            // TB_ves
-            // 
-            this.TB_ves.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_ves.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TB_ves.Location = new System.Drawing.Point(621, 370);
-            this.TB_ves.Name = "TB_ves";
-            this.TB_ves.Size = new System.Drawing.Size(115, 22);
-            this.TB_ves.TabIndex = 24;
-            this.TB_ves.Text = "0";
+            this.button23.BackColor = System.Drawing.Color.DarkGray;
+            this.button23.Enabled = false;
+            this.button23.FlatAppearance.BorderSize = 0;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button23.Location = new System.Drawing.Point(7, 244);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(163, 32);
+            this.button23.TabIndex = 18;
+            this.button23.Text = "удалить категорию";
+            this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // label11
             // 
@@ -1149,6 +1229,41 @@
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
+            // CB_thema
+            // 
+            this.CB_thema.BackColor = System.Drawing.Color.White;
+            this.CB_thema.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_thema.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CB_thema.FormattingEnabled = true;
+            this.CB_thema.Items.AddRange(new object[] {
+            "стандартная",
+            "miavochka"});
+            this.CB_thema.Location = new System.Drawing.Point(183, 27);
+            this.CB_thema.Name = "CB_thema";
+            this.CB_thema.Size = new System.Drawing.Size(170, 29);
+            this.CB_thema.TabIndex = 10;
+            this.CB_thema.SelectedIndexChanged += new System.EventHandler(this.CB_thema_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(179, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 21);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "тема";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.DimGray;
+            this.flowLayoutPanel3.Controls.Add(this.button20);
+            this.flowLayoutPanel3.Controls.Add(this.button22);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(200, 0);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(544, 58);
+            this.flowLayoutPanel3.TabIndex = 12;
+            // 
             // button20
             // 
             this.button20.BackColor = System.Drawing.Color.Gainsboro;
@@ -1164,26 +1279,6 @@
             this.button20.Text = "настройки";
             this.button20.UseVisualStyleBackColor = false;
             this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button23);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.LB_category);
-            this.panel2.Controls.Add(this.button19);
-            this.panel2.Controls.Add(this.CB_thema);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Location = new System.Drawing.Point(200, 58);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 392);
-            this.panel2.TabIndex = 18;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(200, 58);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(600, 392);
-            this.panel3.TabIndex = 19;
             // 
             // button22
             // 
@@ -1201,88 +1296,12 @@
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
-            // button1
+            // panel3
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Image = global::Cook_manager.Properties.Resources.шапка_48х48;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 58);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // PB_my_form_square
-            // 
-            this.PB_my_form_square.Image = global::Cook_manager.Properties.Resources.квадрат_72х72;
-            this.PB_my_form_square.Location = new System.Drawing.Point(142, 227);
-            this.PB_my_form_square.Name = "PB_my_form_square";
-            this.PB_my_form_square.Size = new System.Drawing.Size(90, 90);
-            this.PB_my_form_square.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PB_my_form_square.TabIndex = 9;
-            this.PB_my_form_square.TabStop = false;
-            this.PB_my_form_square.Click += new System.EventHandler(this.PB_my_form_square_Click);
-            // 
-            // PB_my_form_circle
-            // 
-            this.PB_my_form_circle.Image = global::Cook_manager.Properties.Resources.круг_72х72;
-            this.PB_my_form_circle.Location = new System.Drawing.Point(12, 227);
-            this.PB_my_form_circle.Name = "PB_my_form_circle";
-            this.PB_my_form_circle.Size = new System.Drawing.Size(90, 90);
-            this.PB_my_form_circle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PB_my_form_circle.TabIndex = 6;
-            this.PB_my_form_circle.TabStop = false;
-            this.PB_my_form_circle.Click += new System.EventHandler(this.PB_my_form_circle_Click);
-            // 
-            // PB_my_form_rectangle
-            // 
-            this.PB_my_form_rectangle.Image = global::Cook_manager.Properties.Resources.прямоугольник_72х72;
-            this.PB_my_form_rectangle.Location = new System.Drawing.Point(272, 227);
-            this.PB_my_form_rectangle.Name = "PB_my_form_rectangle";
-            this.PB_my_form_rectangle.Size = new System.Drawing.Size(90, 90);
-            this.PB_my_form_rectangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PB_my_form_rectangle.TabIndex = 8;
-            this.PB_my_form_rectangle.TabStop = false;
-            this.PB_my_form_rectangle.Click += new System.EventHandler(this.PB_my_form_rectangle_Click);
-            // 
-            // PB_form_recept_square
-            // 
-            this.PB_form_recept_square.Image = global::Cook_manager.Properties.Resources.квадрат_72х72;
-            this.PB_form_recept_square.Location = new System.Drawing.Point(142, 36);
-            this.PB_form_recept_square.Name = "PB_form_recept_square";
-            this.PB_form_recept_square.Size = new System.Drawing.Size(90, 90);
-            this.PB_form_recept_square.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PB_form_recept_square.TabIndex = 5;
-            this.PB_form_recept_square.TabStop = false;
-            this.PB_form_recept_square.Click += new System.EventHandler(this.PB_form_recept_square_Click);
-            // 
-            // PB_form_recept_circle
-            // 
-            this.PB_form_recept_circle.Image = global::Cook_manager.Properties.Resources.круг_72х72;
-            this.PB_form_recept_circle.Location = new System.Drawing.Point(12, 36);
-            this.PB_form_recept_circle.Name = "PB_form_recept_circle";
-            this.PB_form_recept_circle.Size = new System.Drawing.Size(90, 90);
-            this.PB_form_recept_circle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PB_form_recept_circle.TabIndex = 2;
-            this.PB_form_recept_circle.TabStop = false;
-            this.PB_form_recept_circle.Click += new System.EventHandler(this.PB_form_recept_circle_Click);
-            // 
-            // PB_form_recept_rectangle
-            // 
-            this.PB_form_recept_rectangle.BackColor = System.Drawing.Color.White;
-            this.PB_form_recept_rectangle.Image = global::Cook_manager.Properties.Resources.прямоугольник_72х72;
-            this.PB_form_recept_rectangle.Location = new System.Drawing.Point(272, 36);
-            this.PB_form_recept_rectangle.Name = "PB_form_recept_rectangle";
-            this.PB_form_recept_rectangle.Size = new System.Drawing.Size(90, 90);
-            this.PB_form_recept_rectangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.PB_form_recept_rectangle.TabIndex = 4;
-            this.PB_form_recept_rectangle.TabStop = false;
-            this.PB_form_recept_rectangle.Click += new System.EventHandler(this.PB_form_recept_rectangle_Click);
+            this.panel3.Location = new System.Drawing.Point(200, 58);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(600, 392);
+            this.panel3.TabIndex = 19;
             // 
             // pictureBox1
             // 
@@ -1295,20 +1314,29 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // button23
+            // button24
             // 
-            this.button23.BackColor = System.Drawing.Color.DarkGray;
-            this.button23.Enabled = false;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button23.Location = new System.Drawing.Point(7, 244);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(163, 32);
-            this.button23.TabIndex = 18;
-            this.button23.Text = "удалить категорию";
-            this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.button24.BackColor = System.Drawing.Color.Gainsboro;
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button24.Location = new System.Drawing.Point(373, 24);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(163, 32);
+            this.button24.TabIndex = 19;
+            this.button24.Text = "удалить все данные";
+            this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(375, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(124, 21);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "очистка данных";
             // 
             // maim_form
             // 
@@ -1344,17 +1372,17 @@
             this.PANEL_calculate.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.PANEL_param.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_my_form_square)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_my_form_circle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_my_form_rectangle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_form_recept_square)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_form_recept_circle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_form_recept_rectangle)).EndInit();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.PANEL_param.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1444,6 +1472,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button24;
     }
 }
 

@@ -346,10 +346,10 @@ namespace Cook_manager
         {
             add_product form = new add_product();
 
-            form.CB_category.Items.Add(" ");
+            form.CB_category.Items.Add("все");
             for (int i = 0; i < LB_category.Items.Count; i++)
                 form.CB_category.Items.Add(LB_category.Items[i].ToString());
-            //CB_category.SelectedIndex = 0;
+            form.CB_category.SelectedIndex = 0;
             TB_find_product.Clear();
 
             if (form.ShowDialog() == DialogResult.OK)
@@ -424,7 +424,7 @@ namespace Cook_manager
 
             for (int i = 0; i < LB_category.Items.Count; i++)
                 form.CB_category.Items.Add(LB_category.Items[i].ToString());
-            CB_category.SelectedIndex = 0;
+            form.CB_category.SelectedIndex = 0;
             TB_find_product.Clear();
 
             form.TB_name_product.Text = dataGridView4[0, row_index_product].Value.ToString();
@@ -461,7 +461,7 @@ namespace Cook_manager
         {
             add_igredient form = new add_igredient();
 
-            form.update_value_price(dataGridView4.RowCount);
+            //form.update_value_price(dataGridView4.RowCount);
 
             form.product_category = spisok_productov;
 
@@ -469,14 +469,14 @@ namespace Cook_manager
             {
                 form.CB_ingredient.Items.Add(dataGridView4[0, i].Value);
                 //form.CB_ingredient.Items.Add(dataGridView4[0, i].Value + " | вес/кол-во: " + dataGridView4[2, i].Value);
-                form.price[i] = Convert.ToDouble(dataGridView4[1, i].Value);
-                form.kolvo[i] = Convert.ToDouble(dataGridView4[2, i].Value);
+                //form.price[i] = Convert.ToDouble(dataGridView4[1, i].Value);
+                //form.kolvo[i] = Convert.ToDouble(dataGridView4[2, i].Value);
             }
 
-            for (int i = 0; i < LB_category.Items.Count; i++)
+            for (int i = 0; i <= LB_category.Items.Count; i++)
                 form.CB_category.Items.Add(CB_category.Items[i]);
 
-            //form.CB_category.SelectedIndex = 0;
+            form.CB_category.SelectedIndex = 0;
 
             if (form.ShowDialog() == DialogResult.OK)
             {
@@ -1308,6 +1308,9 @@ namespace Cook_manager
                 using (BinaryReader file = new BinaryReader(File.Create(category)))
                 {
                 }
+
+                update_category();
+                //save_category();
             }
         }
 
@@ -1318,6 +1321,8 @@ namespace Cook_manager
 
             for (int i = 0; i < LB_category.Items.Count; i++)
                 CB_category.Items.Add(LB_category.Items[i].ToString());
+
+            CB_category.SelectedIndex = 0;
         }
 
 
@@ -1415,5 +1420,16 @@ namespace Cook_manager
 
         #endregion
 
+        private void button24_Click(object sender, EventArgs e)
+        {
+            if ((MessageBox.Show("удалить безвозвратно все данные приложения? \nпотребуется перезапуск приложения", "предупреждение", MessageBoxButtons.YesNo) == DialogResult.Yes))
+            {
+                string papka = $@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager";
+
+                Directory.Delete(papka, true);
+
+                Application.Restart();
+            }
+        }
     }
 }

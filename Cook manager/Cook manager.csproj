@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>chef_food_restaurant__icon-icons.com_49898.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\chef_food_restaurant__icon-icons.com_49898.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,60 +49,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="add_category.cs">
+    <Compile Include="forms\add_category.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="add_category.Designer.cs">
+    <Compile Include="forms\add_category.Designer.cs">
       <DependentUpon>add_category.cs</DependentUpon>
     </Compile>
-    <Compile Include="add_igredient.cs">
+    <Compile Include="forms\add_igredient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="add_igredient.Designer.cs">
+    <Compile Include="forms\add_igredient.Designer.cs">
       <DependentUpon>add_igredient.cs</DependentUpon>
     </Compile>
-    <Compile Include="add_product.cs">
+    <Compile Include="forms\add_product.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="add_product.Designer.cs">
+    <Compile Include="forms\add_product.Designer.cs">
       <DependentUpon>add_product.cs</DependentUpon>
     </Compile>
-    <Compile Include="maim_form.cs">
+    <Compile Include="forms\maim_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="maim_form.Designer.cs">
+    <Compile Include="forms\maim_form.Designer.cs">
       <DependentUpon>maim_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="recalculation.cs">
+    <Compile Include="forms\recalculation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="recalculation.Designer.cs">
+    <Compile Include="forms\recalculation.Designer.cs">
       <DependentUpon>recalculation.cs</DependentUpon>
     </Compile>
-    <Compile Include="save_recept.cs">
+    <Compile Include="forms\save_recept.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="save_recept.Designer.cs">
+    <Compile Include="forms\save_recept.Designer.cs">
       <DependentUpon>save_recept.cs</DependentUpon>
     </Compile>
-    <Compile Include="tech_map.cs">
+    <Compile Include="forms\tech_map.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tech_map.Designer.cs">
+    <Compile Include="forms\tech_map.Designer.cs">
       <DependentUpon>tech_map.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="add_category.resx">
+    <EmbeddedResource Include="forms\add_category.resx">
       <DependentUpon>add_category.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="add_igredient.resx">
+    <EmbeddedResource Include="forms\add_igredient.resx">
       <DependentUpon>add_igredient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="add_product.resx">
+    <EmbeddedResource Include="forms\add_product.resx">
       <DependentUpon>add_product.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="maim_form.resx">
+    <EmbeddedResource Include="forms\maim_form.resx">
       <DependentUpon>maim_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -115,13 +115,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="recalculation.resx">
+    <EmbeddedResource Include="forms\recalculation.resx">
       <DependentUpon>recalculation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="save_recept.resx">
+    <EmbeddedResource Include="forms\save_recept.resx">
       <DependentUpon>save_recept.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tech_map.resx">
+    <EmbeddedResource Include="forms\tech_map.resx">
       <DependentUpon>tech_map.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -138,7 +138,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="chef_food_restaurant__icon-icons.com_49898.ico" />
+    <Content Include="Resources\chef_food_restaurant__icon-icons.com_49898.ico" />
     <None Include="Resources\прямоугольник 72х72.png" />
     <None Include="Resources\круг 72х72.png" />
     <None Include="Resources\квадрат 72х72.png" />

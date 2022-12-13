@@ -6,8 +6,8 @@ namespace Cook_manager
     public partial class add_igredient : Form
     {
 
-        public double[] price;
-        public double[] kolvo;
+        //public double[] price;
+        //public double[] kolvo;
         public string[,] product_category;
         public add_igredient()
         {
@@ -19,11 +19,11 @@ namespace Cook_manager
         {
             update_price();
         }
-        public void update_value_price(int value)
-        {
-            price = new double[value];
-            kolvo = new double[value];
-        }
+        //public void update_value_price(int value)
+        //{
+        //    price = new double[value];
+        //    kolvo = new double[value];
+        //}
         public void update_value_category(int value)
         {
             product_category = new string[value, 3];

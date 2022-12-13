@@ -15,3 +15,20 @@ C:\Users\n_332\Documents\GitHub\Encoder\Cook manager\Cook manager\obj\Debug\Cook
 C:\Users\n_332\Documents\GitHub\Encoder\Cook manager\Cook manager\obj\Debug\Cook_manager.tech_map.resources
 C:\Users\n_332\Documents\GitHub\Encoder\Cook manager\Cook manager\obj\Debug\Cook_manager.recalculation.resources
 C:\Users\n_332\Documents\GitHub\Encoder\Cook manager\Cook manager\obj\Debug\Cook_manager.add_category.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\bin\Debug\Cook manager.exe.config
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\bin\Debug\Cook manager.exe
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\bin\Debug\Cook manager.pdb
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook manager.csproj.AssemblyReference.cache
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.add_category.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.add_igredient.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.add_product.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.maim_form.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.Properties.Resources.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.recalculation.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.save_recept.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook_manager.tech_map.resources
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook manager.csproj.GenerateResource.cache
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook manager.csproj.CoreCompileInputs.cache
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook manager.exe
+C:\Users\n_332\Documents\GitHub\Cook manager\Cook manager\obj\Debug\Cook manager.pdb
