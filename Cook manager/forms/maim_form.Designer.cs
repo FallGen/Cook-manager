@@ -52,6 +52,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.PANEL_recept = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button25 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -112,6 +114,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PANEL_param = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.LB_category = new System.Windows.Forms.ListBox();
@@ -122,13 +126,13 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button24 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.TB_changelog = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.TB_changelog = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.flowLayoutPanel1.SuspendLayout();
             this.PANEL_recept.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.PANEL_create.SuspendLayout();
@@ -289,7 +293,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 21);
             this.label4.TabIndex = 22;
-            this.label4.Text = "v 1.2";
+            this.label4.Text = "v 1.3";
             // 
             // linkLabel1
             // 
@@ -307,6 +311,8 @@
             // 
             // PANEL_recept
             // 
+            this.PANEL_recept.Controls.Add(this.pictureBox2);
+            this.PANEL_recept.Controls.Add(this.button25);
             this.PANEL_recept.Controls.Add(this.button17);
             this.PANEL_recept.Controls.Add(this.button16);
             this.PANEL_recept.Controls.Add(this.button7);
@@ -318,6 +324,30 @@
             this.PANEL_recept.Size = new System.Drawing.Size(800, 450);
             this.PANEL_recept.TabIndex = 2;
             this.PANEL_recept.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(207, 238);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(590, 161);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.DarkGray;
+            this.button25.Enabled = false;
+            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button25.Location = new System.Drawing.Point(303, 406);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(122, 32);
+            this.button25.TabIndex = 19;
+            this.button25.Text = "добавить фото";
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button17
             // 
@@ -406,7 +436,7 @@
             this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView2.Size = new System.Drawing.Size(272, 391);
+            this.dataGridView2.Size = new System.Drawing.Size(272, 232);
             this.dataGridView2.TabIndex = 15;
             this.dataGridView2.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_CellMouseClick);
             // 
@@ -469,7 +499,7 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.Size = new System.Drawing.Size(316, 391);
+            this.dataGridView1.Size = new System.Drawing.Size(316, 232);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
@@ -1128,7 +1158,7 @@
             this.flowLayoutPanel2.Controls.Add(this.button18);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(200, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(600, 58);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(521, 58);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // button18
@@ -1181,6 +1211,30 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 392);
             this.panel2.TabIndex = 18;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(375, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(124, 21);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "очистка данных";
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.Gainsboro;
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button24.Location = new System.Drawing.Point(373, 24);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(163, 32);
+            this.button24.TabIndex = 19;
+            this.button24.Text = "удалить все данные";
+            this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
@@ -1264,7 +1318,7 @@
             this.flowLayoutPanel3.Controls.Add(this.button22);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(200, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(600, 58);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(536, 58);
             this.flowLayoutPanel3.TabIndex = 12;
             // 
             // button20
@@ -1308,40 +1362,15 @@
             this.panel3.Size = new System.Drawing.Size(600, 392);
             this.panel3.TabIndex = 19;
             // 
-            // pictureBox1
+            // label13
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Cook_manager.Properties.Resources.повар_512х512;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.Gainsboro;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button24.Location = new System.Drawing.Point(373, 24);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(163, 32);
-            this.button24.TabIndex = 19;
-            this.button24.Text = "удалить все данные";
-            this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(375, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 21);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "очистка данных";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(3, 3);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(142, 21);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "список изменений";
             // 
             // TB_changelog
             // 
@@ -1357,15 +1386,20 @@
             this.TB_changelog.TabIndex = 0;
             this.TB_changelog.Text = resources.GetString("TB_changelog.Text");
             // 
-            // label13
+            // pictureBox1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(3, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(142, 21);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "список изменений";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Cook_manager.Properties.Resources.повар_512х512;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
             // 
             // maim_form
             // 
@@ -1374,12 +1408,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.PANEL_recept);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PANEL_param);
             this.Controls.Add(this.PANEL_calculate);
             this.Controls.Add(this.PANEL_product);
             this.Controls.Add(this.PANEL_create);
-            this.Controls.Add(this.PANEL_recept);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "maim_form";
@@ -1389,6 +1423,7 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.PANEL_recept.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.PANEL_create.ResumeLayout(false);
@@ -1507,6 +1542,9 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox TB_changelog;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
 

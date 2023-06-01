@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
 
 namespace Cook_manager
 {
@@ -109,7 +110,7 @@ namespace Cook_manager
             }
         }
 
-        public void update_main_button(int index_panel) //update color and interface
+        public void update_main_button(int index_panel) //update color and interfaceВ
         {
             btn_work_recept(false);
             btn_work_bludo(false);
@@ -136,6 +137,7 @@ namespace Cook_manager
             dataGridView4.ClearSelection();
 
             dataGridView2.RowCount = 0;
+            pictureBox2.Image = null;
 
             row_index_product = -1;
             row_index_ingredient = -1;
@@ -169,7 +171,6 @@ namespace Cook_manager
                     update_param_button(1);
                     break;
             }
-
         }
 
         private void btn_work_recept(bool flag)
@@ -207,18 +208,21 @@ namespace Cook_manager
             button7.Enabled = flag;
             button17.Enabled = flag;
             button16.Enabled = flag;
+            button25.Enabled = flag;
 
             if (flag)
             {
                 button17.BackColor = Color.Gainsboro;
                 button7.BackColor = Color.Gainsboro;
                 button16.BackColor = Color.Gainsboro;
+                button25.BackColor = Color.Gainsboro;
             }
             else
             {
                 button17.BackColor = Color.DarkGray;
                 button7.BackColor = Color.DarkGray;
                 button16.BackColor = Color.DarkGray;
+                button25.BackColor = Color.DarkGray;
             }
         }
         private void btn_work_product(bool flag)
@@ -796,6 +800,17 @@ namespace Cook_manager
             }
         }
 
+        private void load_photo_bludo(string name_bludo_photo)
+        {
+            try
+            {
+                string bludo = $@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager\photo\photo {name_bludo_photo}";
+
+                pictureBox2.ImageLocation = bludo;
+            }
+            catch { }
+        }
+
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try
@@ -806,6 +821,8 @@ namespace Cook_manager
                 btn_work_bludo(true);
 
                 load_recept(dataGridView1[0, e.RowIndex].Value.ToString(), "update_recept");
+                load_photo_bludo(dataGridView1[0, e.RowIndex].Value.ToString());
+
                 dataGridView2.ClearSelection();
             }
             catch { }
@@ -819,20 +836,27 @@ namespace Cook_manager
         //удаление блюда
         private void button7_Click(object sender, EventArgs e)
         {
-            if ((row_index_bludo != -1) && (MessageBox.Show("удалить безвозвратно блюдо \"" + dataGridView1[0, row_index_bludo].Value + "\"?", "предупреждение", MessageBoxButtons.YesNo) == DialogResult.Yes))
+            try
             {
-                File.Delete($@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager\recepts\{dataGridView1[0, row_index_bludo].Value}");
-                File.Delete($@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager\tech_map\{"tech_map " + dataGridView1[0, row_index_bludo].Value}");
-                dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
-                dataGridView1.ClearSelection();
+                if ((row_index_bludo != -1) && (MessageBox.Show("удалить безвозвратно блюдо \"" + dataGridView1[0, row_index_bludo].Value + "\"?", "предупреждение", MessageBoxButtons.YesNo) == DialogResult.Yes))
+                {
+                    File.Delete($@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager\recepts\{dataGridView1[0, row_index_bludo].Value}");
+                    File.Delete($@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager\tech_map\{"tech_map " + dataGridView1[0, row_index_bludo].Value}");
+                    File.Delete($@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager\photo\{"photo " + dataGridView1[0, row_index_bludo].Value}");
 
-                btn_work_bludo(false);
+                    dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+                    dataGridView1.ClearSelection();
 
-                dataGridView2.RowCount = 0;
-                row_index_bludo = -1;
+                    btn_work_bludo(false);
 
-                save_bludo();
+                    dataGridView2.RowCount = 0;
+                    row_index_bludo = -1;
+                    pictureBox2.Image = null;
+
+                    save_bludo();
+                }
             }
+            catch { }
         }
 
         //изменение блюда
@@ -899,19 +923,15 @@ namespace Cook_manager
             {
                 case 1:
                     PB_form_recept_circle.BackColor = Color.Pink;
-                    //TB_recept_circle.Text = "диаметр, см";
                     TB_recept_circle.Visible = true;
                     break;
                 case 2:
                     PB_form_recept_square.BackColor = Color.Pink;
-                    //TB_recept_square.Text = "длина, см";
                     TB_recept_square.Visible = true;
 
                     break;
                 case 3:
                     PB_form_recept_rectangle.BackColor = Color.Pink;
-                    //TB_recept_rectangleA.Text = "длина, см";
-                    //TB_recept_rectangleB.Text = "ширина, см";
                     TB_recept_rectangleA.Visible = true;
                     TB_recept_rectangleB.Visible = true;
                     break;
@@ -954,18 +974,14 @@ namespace Cook_manager
                 case 1:
                     PB_my_form_circle.BackColor = Color.Pink;
                     TB_my_circle.Visible = true;
-                    //TB_my_circle.Text = "диаметр, см";
                     break;
                 case 2:
                     PB_my_form_square.BackColor = Color.Pink;
-                    //TB_my_square.Text = "длина, см";
                     TB_my_square.Visible = true;
 
                     break;
                 case 3:
                     PB_my_form_rectangle.BackColor = Color.Pink;
-                    //TB_my_rectangleA.Text = "длина, см";
-                    //TB_my_rectangleB.Text = "ширина, см";
                     TB_my_rectangleA.Visible = true;
                     TB_my_rectangleB.Visible = true;
                     break;
@@ -1430,6 +1446,43 @@ namespace Cook_manager
 
                 Application.Restart();
             }
+        }
+
+        //добавление фото к блюду
+        private void button25_Click(object sender, EventArgs e)
+        {
+            add_photo_bludo();
+        }
+
+        private void add_photo_bludo()
+        {
+            string photo_bludo = $@"C:\Users\{Environment.UserName}\AppData\Roaming\Cook manager\photo\photo {dataGridView1[0, row_index_bludo].Value}";
+
+            try
+            {
+                //создание папки
+                string path = $@"C:\Users\{Environment.UserName}\AppData\Roaming\";
+                string subpath = @"Cook manager\photo";
+
+                DirectoryInfo dirInfo = new DirectoryInfo(path);
+                if (!dirInfo.Exists)
+                    dirInfo.Create();
+
+                dirInfo.CreateSubdirectory(subpath);
+
+                OpenFileDialog fileDialog = new OpenFileDialog();
+
+                if (fileDialog.ShowDialog() == true)
+                {
+                    //pictureBox2.ImageLocation = fileDialog.FileName;
+                    FileInfo fileInf = new FileInfo(fileDialog.FileName);
+                    if (fileInf.Exists)
+                        fileInf.CopyTo(photo_bludo, true);
+                }
+
+                load_photo_bludo(dataGridView1[0, row_index_bludo].Value.ToString());
+            }
+            catch { }
         }
     }
 }
